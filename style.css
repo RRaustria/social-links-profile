@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+ 
+ 
+ * , *::before , *::after {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+ }
+ 
+ :root {
+    /* ## Primary */ 
+
+--Green: hsl(75, 94%, 57%);
+
+/* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 20%);
+--DarkGrey: hsl(0, 0%, 12%);
+--OffBlack: hsl(0, 0%, 8%);
+}
+
+html {
+    font-family: Inter;
+}
+body {
+    background-color: var(--OffBlack);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+article {
+     width: 350px;
+     min-height: 500px;
+     background-color: var(--DarkGrey);
+     border-radius: 10px;
+     padding: 2em;
+}
+.articles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+article img {
+    margin: 0 auto;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+.center {
+    text-align: center;
+    color: white;
+}
+
+.head{
+    margin-top: 1em;
+    font-weight: 600
+}
+.middle {
+    margin-top: .5em;
+    font-size: .9rem;
+    color: var(--Green);
+    font-weight: 600;
+}
+.lower {
+    margin-block: 2em;
+    font-weight: 400;
+    font-size: .9rem    ;
+}
+.box {
+    margin-top: 1em;
+    text-align: center;
+    padding: 2em;
+    padding-top: 1em;
+    height: 2rem;
+    background-color: var(--Grey);
+    color: var(--White);
+    font-weight: 600;
+    border-radius: 10px;
+    font-size: .9rem;
+}
